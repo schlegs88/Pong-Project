@@ -1,6 +1,6 @@
 # Pong!
-
-## Quick Start Guide:
+Last Update: 2024-01-16
+# Quick Start Guide:
 The only file required to play and run the game is saved here:  
 https://github.com/schlegs88/Pong-Project/blob/main/Pong%20Project.exe  
 
@@ -13,7 +13,7 @@ ESC to quit.
 
 The game will continually score and create new rounds for as long as you would like to play. The ball will only accelerate to a certain speed. With a little luck and skill, see if you can become better than the AI!
 
-## Downloading and Contributing
+# Downloading and Contributing
 This project is open source and available on GitHub!  
 I've included some instructions on how to access and modify the project.  
 
@@ -22,13 +22,14 @@ Unity - Version 2023.2.5
 git - Any version should work but most recent is perferred.  
 
 ## Installation
-1. Clone the repository to your local machine using git.  
-  -Open a command prompt and use:
+1. Clone the repository to your local machine using git. 
+   - Instructions on how to download git are below
+   - Open a command prompt and use:
   ```bash
   git clone https://github.com/schlegs88/Pong-Project
   ```
 2. Open the project in Unity
-  -Instructions on how to download unity are below.
+   - Instructions on how to download unity are below.
 3. You can edit the project by modifying the components of the game objects or by editing the c# scripts in the assets folder directly.  
 4. To build and run. Use File->'Build and Run'
 5. Version control is handled through GitHub. See below for more info.
@@ -87,6 +88,5 @@ Note: on MacOS git comes pre-installed!
 2. Helpful link for learning how to edit open source projects on GitHub:
    https://dev.to/codesphere/how-to-start-contributing-to-open-source-projects-on-github-534n
 
-
-
-
+# Additional Info
+Pong Wiki - https://en.wikipedia.org/wiki/Pong  
