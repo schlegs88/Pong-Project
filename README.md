@@ -1,10 +1,8 @@
 # Pong!
 Last Update: 2024-01-16
 # Quick Start Guide:
-The only file required to play and run the game is saved here:  
-https://github.com/schlegs88/Pong-Project/blob/main/Pong%20Project.exe  
-
-Simply download the executable, and run!  
+Clone/Download the repository located here: https://github.com/schlegs88/Pong-Project
+Simply run the executable titled 'Pong-Project.exe'!  
 Controls:  
 UP or W to move your paddle up.  
 DOWN or S to move your paddle down.  
