@@ -21,7 +21,8 @@ I've included some instructions on how to access and modify the project.
 
 ## Requirements and Specifications
 Unity - Version 2023.2.5
-git - Any version should do.
+git - Any version should do
+
 ## Installation
 1. Clone the repository to your local machine using git.
   1.1 Open a command prompt and use:
@@ -70,7 +71,7 @@ git - Any version should do.
 6. **Add a Unity Version:**
    - Click on the "Add" button.
    - Select a version.
-   - The version used for this project is 2023.25
+   - The version used for this project is 2023.2.5
 
 7. **Choose Modules:**
    - Select additional modules/features you need during installation.
