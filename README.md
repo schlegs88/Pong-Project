@@ -1,22 +1,31 @@
 # Pong!
 
-## Description
-Awesome Game Title is an exciting and fun Unity game where players embark on an epic adventure to save the world from impending doom. Explore immersive environments, defeat challenging enemies, and uncover hidden treasures. Get ready for an unforgettable gaming experience!
+## Quick Start Guide:
+The only file required to play and run the game is saved here:
+https://github.com/schlegs88/Pong-Project/blob/main/Pong%20Project.exe
 
-## Features
-- Engaging gameplay with intuitive controls
-- Stunning graphics and immersive sound effects
-- Multiple levels with increasing difficulty
-- Exciting boss battles
-- Collectible power-ups and upgrades
+Simply download the executable, and run!
+Controls:
+UP or W to move your paddle up.
+DOWN or S to move your paddle down.
+SPACEBARD to pause.
+ESC to quit.
+
+The game will continually score and create new rounds for as long as you would like to play.
+The ball will only accelerate to a certain speed.
+With a little luck and skill, see if you can become better than the AI!
+
+## Downloading and Contributing
+This project is open source and available on GitHub!
+I've included some instructions on how to access and modify the project.
 
 ## Requirements and Specifications
 Unity - Version 2023.2.5
-Github
+git - Any version should do.
 ## Installation
 1. Clone the repository to your local machine using git.
   1.1 Open a command prompt and use:
-  ```
+  ```bash
   git clone https://github.com/schlegs88/Pong-Project
   ```
   If
@@ -27,6 +36,8 @@ Github
    or by editing the c# scripts in the assets folder directly.
 
 4. To build and run. Use File->'Build and Run'
+
+5. Version control is handled through GitHub. See below for more info.
 
 
 
@@ -75,8 +86,15 @@ Github
     - Once installation is complete, launch Unity from the Unity Hub.
     - Sign in with your Unity ID if prompted.
 
-## Installing and using GIT
-Note: on MacOS you can download
+# Installing and using GIT
+Note: on MacOS git comes pre-installed!
+1. If on Windows, use this link to download git: https://gitforwindows.org/
+2. You can check if it worked correctly by using
+  ```bash
+    git --version
+  ```
+2. Helpful link for learning how to edit open source projects on GitHub:
+   https://dev.to/codesphere/how-to-start-contributing-to-open-source-projects-on-github-534n
 
 
 

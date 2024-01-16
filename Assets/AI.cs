@@ -6,25 +6,38 @@ public class AI : MonoBehaviour
 {
     public GameObject ball;
     public float MoveSpeed = 5f;
+    public float Smoothing = 0.99f;
+    public float buffer = 0.01f;
     private Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        Vector2 direction = new Vector2(0f, 1f);
+    {   
         float ballposition = ball.transform.position.y;
-        if(transform.position.y < ballposition){
-            rb.velocity = MoveSpeed * direction;
-        }else{
-            rb.velocity = MoveSpeed * direction * -1;
+        if(transform.position.y > -2.9 | transform.position.y < 3.9)
+        {
+            if(transform.position.y < ballposition)
+            {
+                rb.velocity = Vector2.Lerp(rb.velocity, new Vector2(0f, MoveSpeed), Smoothing);
+            }
+            else if (transform.position.y > ballposition)
+            {
+                // Smoothly interpolate the velocity
+                rb.velocity = Vector2.Lerp(rb.velocity, new Vector2(0f, MoveSpeed * -1), Smoothing);
+            }
         }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
+        Debug.Log("Ball position: " + ball.transform.position.y);
+        Debug.Log("Paddle position: " + transform.position.y);
         ClampPlayerPosition();
     }
 
