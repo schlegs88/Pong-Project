@@ -10,10 +10,10 @@ public class Ball : MonoBehaviour
 
     public float startDirection = 1f;
     private Rigidbody2D rb;
-    
+    public float MAXSPEED = 10f;
     public float rotationalSpeed = 1000f;
     void Update(){
-        
+        ClampSpeed();
     }
     void Start()
     {
@@ -33,5 +33,13 @@ public class Ball : MonoBehaviour
         rb.velocity = rb.velocity * 1.1f;
         randomNess = Random.Range(-3f, 3f);
         rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y+randomNess);
+    }
+
+    void ClampSpeed()
+    {
+        if(rb.velocity.x > MAXSPEED | rb.velocity.y > MAXSPEED)
+        {
+            rb.velocity = rb.velocity*0.9f;
+        }     
     }
 }
