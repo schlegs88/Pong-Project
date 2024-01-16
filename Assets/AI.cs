@@ -18,7 +18,7 @@ public class AI : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
+    {   ;
         float ballposition = ball.transform.position.y;
         if(transform.position.y > -2.9 | transform.position.y < 3.9)
         {
